@@ -1,0 +1,26 @@
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# User specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
