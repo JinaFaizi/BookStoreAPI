@@ -56,4 +56,18 @@ public class BooksController : ControllerBase
         }
         return Ok(book);
     }
+
+    [HttpPost]
+    public IActionResult CreateBook([FromBody] Book book)
+    {
+        if (books.Any(b => b.Id == book.Id))
+        {
+            
+        }
+        books.Add(book);
+
+        return CreatedAtAction(nameof(Get),
+            new { id = book.Id },
+            book);
+    }
 }
